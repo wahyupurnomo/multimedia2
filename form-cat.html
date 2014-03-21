@@ -1,0 +1,30 @@
+<!Doctype html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/jquery.mobile-1.4.0.min.css">
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+<script src="assets/js/jquery.mobile-1.4.0.min.js"></script>
+
+</head>
+<body>
+<div data-role="page">
+	<div data-role="header">
+		<h1>Form Category</h1>
+		<a data-role="button" href="index.php" rel="external" data-icon="home" data-inline="false">Home</a>
+                <a data-role="button" href="form.html" data-icon="grid" data-theme="b">Form</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+	
+<form action="insert.php" method="post">
+ <div data-role="fieldcontain">
+<label for="id">No ID: </label><input type="text" name="id">
+<label for="name">Name Category: </label><input type="text" name="name">
+<label for="contains">Contains: </label><input type="text" name="contains">
+</div>
+<input type="submit"  data-inline="true" value="Submit">
+</form>
+</div>
+</div>
+</body>
+</html>
